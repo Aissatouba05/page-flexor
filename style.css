@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 8px; 
+}
+.bloc{
+    display: flex;
+    gap: 35px;
+    margin-left: 100px;
+    color: white;
+    font-size: 18px;
+}
+.bloc-icone{
+     display: flex;
+    gap: 30px;
+    margin-right: 100px;
+}
+.bloc i{
+    color: orangered;
+    font-size: 20px;
+}
+.bloc-icone i{
+    color: gray;
+    font-size: 18px;
+}
+.lien1{
+    margin-left: -30px; 
+    text-decoration: none; 
+    color: white;
+}
+.lien1:hover{
+    color: orangered;
+   text-decoration:underline;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    background-color: white;
+    padding: 24px;
+     position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.flexor{
+   font-weight: bold;
+   font-size: 18px;
+}
+.lienav{
+    display: flex;
+    gap: 30px;
+}
+.lienav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.lienav a:hover{
+    color: orangered;
+}
+.home{
+    color: orangered;
+}
+.navbar{
+     position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
+    left: 0;
+    right: 0;
+    z-index: 1000;  
+}
+
+
+.section1 {
+    background-image: url(images/hero-bg.jpg);
+    width: 100%;
+    height: 150vh;           /* Hauteur complète écran */
+    background-size: cover;  /* Couvre toute la section */
+    background-position: center;  /* Centrée */
+    background-repeat: no-repeat; /* Pas de répétition */
+  
+}
+.section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: rgba(0,0,0,0.5);  /* Noir semi-transparent */
+   
+}
+.titre {
+    margin-top: 190px;
+    margin-left: 100px;
+    position: absolute;     /* Texte au-dessus overlay */
+    color: white;
+    z-index: 2;             /* Au-dessus overlay */
+    line-height: 10;
+    line-height: 1.4;
+}
+.h1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.p{
+    
+    font-size: 30px;
+}
+.div3{
+    position: absolute;     /* Texte au-dessus overlay */
+    color: white;
+    margin-top: 350px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+}
+.premierdiv{
+    background-color: orangered;
+    padding: 20px;
+    height: 450px;
+    font-size: 20px;
+}
+.untitre{
+     line-height: 1.4;
+
+}
+.para1{
+    line-height: 1.5;
+}
+.btn1{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 18px;
+    font-size: 16px;
+    background-color: rgba(255, 153, 0, 0.801); 
+    color: white;
+    margin-top: 28px; 
+    margin-left: 75px; 
+}
+.deuxiemediv{
+     background-color: transparent;
+    background-color: rgba(22, 5, 5, 0.664);
+    padding: 28px 40px;
+    text-align: center;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 42px;
+     
+}
+.deuxiemediv i{
+  color: orangered;
+  font-size: 60px; 
+  line-height: 1.5;
+}
+.para2{
+    line-height: 1.5;
+}
+.section2{
+    background-color: #fff7f4; 
+    display: flex;
+    justify-content: space-between;
+     gap: 20px;
+}
+.img{
+    margin-top: 70px;
+    width: 500px;
+    margin-left: 120px;
+}
+.global{
+     margin-top: 60px;
+     margin-right: 120px;
+    line-height: 1.5;
+}
+.case1{
+   display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 0;
+}
+.icon{
+    font-size: 40px;
+    color: #ff5722; /* couleur orange comme dans ton design */
+}
+.section2 p {
+    
+    color: black;
+    font-size: 20px;
+}
+.section3{
+    background-color: white;
+    padding: 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.client img{
+   width: 100px;
+}
+.section4{
+    padding: 20px;
+      background-color: #fff7f4 ;
+      
+}
+
+
+.divcontainer2{
+      height: 600px;
+      display: flex;
+       justify-content:center;
+        gap: 30px;
+        margin-top: 100px; 
+
+}
+   .divcontainer{
+      height: 600px;
+      display: flex;
+       justify-content:center;
+        gap: 30px;
+        margin-top: -300px;
+          
+        }
+
+        .centre{
+            text-align: center;
+            margin-top: 35px;
+            font-size: 20px;
+             line-height: 1.5;
+        }
+
+        .card {
+            background: white;
+           height: 30%;
+           padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            border: 0.2px solid gray;
+            width: 25%;
+            position: relative;
+        }
+        .circle:hover{
+            background-color: white;
+        }
+        .over:hover{
+            color:#ff5722 ;
+
+        }
+        .card:hover{
+            background-color: #fff7f4 ;
+        }
+        .card h3:hover{
+              color:#ff5722 ;
+
+        }
+
+        .circle {
+            width: 68px;
+            height: 68px;
+            background: #ff5722;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            position: absolute;
+            top: -38px;
+            left: 40%;
+        }
+
+        .card h3 {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: #333;
+        }
+
+         .card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 15px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+ /* ============================
+   OVERRIDES GÉNÉRAUX (placer en fin du CSS)
+   ============================ */
+
+/* Make section1 positioned relative so overlay works reliably */
+/* ===== SECTION 1 — Responsive Mobile (≤480px) ===== */
+@media (max-width: 480px) {
+
+    /* La section s’adapte */
+    .section1 {
+        min-height: 60vh !important;
+        height: auto !important;
+        padding: 50px 4% !important;
+        position: relative !important;
+    }
+
+    /* Overlay correct */
+    .section1::before {
+        inset: 0 !important;
+        height: 100% !important;
+        background: rgba(0,0,0,0.55) !important;
+    }
+
+    /* Le titre devient centré */
+    .titre {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        text-align: center !important;
+        margin: 0  auto !important;
+        margin-right: 70%!important;
+        padding: 0 !important;
+        max-width: 95% !important;
+        line-height: 1.25 !important;
+        z-index: 3 !important;
+    }
+
+    .h1 {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+    }
+
+    .p {
+        font-size: 16px !important;
+        margin-top: 8px !important;
+    }
+
+    /* Les deux blocs deviennent en colonne */
+    .div3 {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        margin: 20px auto 0 auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        z-index: 3 !important;
+    }
+
+    .premierdiv,
+    .deuxiemediv {
+        width: 100% !important;
+        max-width: 95% !important;
+        height: auto !important;
+        padding: 18px !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+    }
+
+    .deuxiemediv i {
+        font-size: 45px !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+
+/* ensure header/navbar do not hide content on small screens */
+@media (max-width: 1024px) {
+    .navbar, .nav {
+        position: static !important;
+        width: 100% !important;
+    }
+
+    .nav {
+        padding: 14px 16px !important;
+    }
+
+    .titre {
+        top: 36% !important;
+        transform: translate(-50%, -36%) !important;
+    }
+
+    .div3 {
+        top: auto !important;
+        position: relative !important;
+        transform: none !important;
+        margin-top: 24px !important;
+    }
+}
+
+/* ============================
+   TABLETTES & PETITS DESKTOPS (<= 1024px)
+   ============================ */
+@media (max-width: 1024px) {
+
+    /* Font sizes */
+    .h1 { font-size: 44px !important; }
+    .p  { font-size: 20px !important; }
+
+    /* Header blocks */
+    .bloc { margin-left: 20px !important; gap: 18px !important; font-size: 16px !important; }
+    .bloc-icone { margin-right: 20px !important; gap: 18px !important; }
+
+    /* Hero image handling */
+    .section1 { background-position: center !important; min-height: 80vh !important; }
+
+    /* Cards & services stack nicely */
+    .divcontainer, .divcontainer2 {
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        margin-top: 40px !important;
+        height: auto !important;
+    }
+
+    .card {
+        width: 45% !important;
+        margin: 0 auto !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        position: relative !important;
+    }
+
+    .circle {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .img { width: 70% !important; margin-left: 0 !important; }
+
+    .global { margin-right: 0 !important; padding: 0 20px !important; max-width: 90vw !important; }
+
+    .div3 { gap: 12px !important; }
+}
+
+/* ============================
+   MOBILES (<= 768px) — comportement essentiel
+   ============================ */
+@media (max-width: 768px) {
+
+    /* Nav becomes stacked and not fixed */
+    .nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        padding: 12px !important;
+        position: static !important;
+    }
+
+    .navbar {
+        position: static !important;
+    }
+
+    /* Titre centré et plus petit */
+    .titre {
+        top: 30% !important;
+        left: 50% !important;
+        transform: translate(-50%, -30%) !important;
+        text-align: center !important;
+        max-width: 92vw !important;
+    }
+
+    .h1 { font-size: 32px !important; }
+    .p  { font-size: 18px !important; }
+
+    /* Stack left blocks vertically */
+    .div3 {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 92vw !important;
+        margin: 16px auto !important;
+    }
+
+    .premierdiv, .deuxiemediv {
+        width: 100% !important;
+        height: auto !important;
+        padding: 18px !important;
+    }
+
+    /* Cards full width */
+    .card {
+        width: 100% !important;
+        margin: 14px 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .circle {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* reduce header density */
+    .bloc {
+        flex-direction: column !important;
+        gap: 8px !important;
+        margin-left: 8px !important;
+        font-size: 14px !important;
+    }
+    .bloc-icone { gap: 12px !important; margin-right: 8px !important; }
+
+    /* clients logos */
+    .section3 { padding: 4% !important; gap: 12px !important; }
+    .client img { width: 64px !important; }
+}
+
+/* ============================
+   PETITS TÉLÉPHONES (<= 480px)
+   ============================ */
+@media (max-width: 480px) {
+
+    .h1 { font-size: 28px !important; }
+    .p  { font-size: 16px !important; }
+
+    .lienav a { font-size: 15px !important; }
+
+    .titre { top: 28% !important; }
+
+    .div3 { gap: 10px !important; width: 95vw !important; }
+
+    .section3 img { width: 54px !important; }
+    .client img { width: 48px !important; }
+
+    .card { padding: 16px !important; }
+}
+
+
+
+
+
