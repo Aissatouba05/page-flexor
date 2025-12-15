@@ -347,7 +347,7 @@
      content: '';
     position: absolute;
     padding-bottom: 80px;
-    height: 344%;
+    height: auto;
     background: rgba(0,0,0,0.5);  /* Noir semi-transparent */ 
 }
     /* .section1::before {
