@@ -317,7 +317,7 @@
     }
     .navbar{
            position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
-            margin-top: -48%;
+            margin-top: -50%;
     }
 
     /* ---------- NAVBAR ---------- */
@@ -358,6 +358,7 @@
         position: relative;
         margin-right: 24%;
         text-align: center;
+        color: black;
     }
 
     .h1 {
