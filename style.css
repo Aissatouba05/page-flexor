@@ -92,8 +92,7 @@
     left: 0;
     width: 100%;
     height: 150%;
-    background: rgba(0,0,0,0.5);  /* Noir semi-transparent */
-   
+    background: rgba(0,0,0,0.5);  /* Noir semi-transparent */ 
 }
 .titre {
     margin-top: 190px;
@@ -290,252 +289,153 @@
             margin: auto;
         }
 
- /* ============================
-   OVERRIDES GÉNÉRAUX (placer en fin du CSS)
-   ============================ */
+  /* ================= RESPONSIVE MOBILE ================= */
+@media (max-width: 768px) {
 
-/* Make section1 positioned relative so overlay works reliably */
-/* ===== SECTION 1 — Responsive Mobile (≤480px) ===== */
-@media (max-width: 480px) {
+    /* ---------- HEADER ---------- */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-    /* La section s’adapte */
+    .bloc {
+        margin-left: 0;
+        gap: 40px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .flexor{
+        text-align: center;
+    }
+
+    .bloc-icone {
+        margin-right: 0;
+        gap: 15px;
+    }
+    .navbar{
+           position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
+            margin-top: -48%;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .lienav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .lienav a {
+        font-size: 16px;
+    }
+
+    /* ---------- SECTION 1 (HERO) ---------- */
     .section1 {
-        min-height: 60vh !important;
-        height: auto !important;
-        padding: 50px 4% !important;
-        position: relative !important;
+        height: auto;
+        padding-bottom: 80px;
     }
+  .section1::before {
+     content: '';
+    position: absolute;
+    padding-bottom: 80px;
+    height: 344%;
+    background: rgba(0,0,0,0.5);  /* Noir semi-transparent */ 
+}
+    /* .section1::before {
+        height: 100%;
+    } */
 
-    /* Overlay correct */
-    .section1::before {
-        inset: 0 !important;
-        height: 100% !important;
-        background: rgba(0,0,0,0.55) !important;
-    }
-
-    /* Le titre devient centré */
     .titre {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        transform: none !important;
-        text-align: center !important;
-        margin: 0  auto !important;
-        margin-right: 70%!important;
-        padding: 0 !important;
-        max-width: 95% !important;
-        line-height: 1.25 !important;
-        z-index: 3 !important;
+        position: relative;
+        margin-right: 24%;
+        text-align: center;
     }
 
     .h1 {
-        font-size: 28px !important;
-        line-height: 1.2 !important;
+        font-size: 36px;
     }
 
     .p {
-        font-size: 16px !important;
-        margin-top: 8px !important;
+        font-size: 18px;
     }
 
-    /* Les deux blocs deviennent en colonne */
+    /* ---------- BLOCS ORANGE ---------- */
     .div3 {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        transform: none !important;
-        width: 100% !important;
-        margin: 20px auto 0 auto !important;
-
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 15px !important;
-        align-items: center !important;
-        justify-content: center !important;
-
-        z-index: 3 !important;
+        position: relative;
+        flex-direction: column;
+        margin: 40px 20px 0;
+        gap: 25px;
+        align-items: center;
     }
 
-    .premierdiv,
-    .deuxiemediv {
-        width: 100% !important;
-        max-width: 95% !important;
-        height: auto !important;
-        padding: 18px !important;
-        box-sizing: border-box !important;
-        text-align: center !important;
+    .btn1 {
+        margin-top: -5%;
+        
+    }
+    .para1{
+        text-align: center;
+        margin-top: -4%;
     }
 
-    .deuxiemediv i {
-        font-size: 45px !important;
-        margin-bottom: 12px !important;
-    }
-}
-
-
-/* ensure header/navbar do not hide content on small screens */
-@media (max-width: 1024px) {
-    .navbar, .nav {
-        position: static !important;
-        width: 100% !important;
+    /* ---------- SECTION 2 ---------- */
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
     }
 
-    .nav {
-        padding: 14px 16px !important;
+    .img {
+        width: 100%;
+        margin: 0;
     }
 
-    .titre {
-        top: 36% !important;
-        transform: translate(-50%, -36%) !important;
+    .global {
+        margin: 30px 0 0;
+        text-align: center;
     }
 
-    .div3 {
-        top: auto !important;
-        position: relative !important;
-        transform: none !important;
-        margin-top: 24px !important;
+    .case1 {
+        justify-content: center;
+        text-align: left;
     }
-}
 
-/* ============================
-   TABLETTES & PETITS DESKTOPS (<= 1024px)
-   ============================ */
-@media (max-width: 1024px) {
+    /* ---------- SECTION 3 ---------- */
+    .section3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
 
-    /* Font sizes */
-    .h1 { font-size: 44px !important; }
-    .p  { font-size: 20px !important; }
-
-    /* Header blocks */
-    .bloc { margin-left: 20px !important; gap: 18px !important; font-size: 16px !important; }
-    .bloc-icone { margin-right: 20px !important; gap: 18px !important; }
-
-    /* Hero image handling */
-    .section1 { background-position: center !important; min-height: 80vh !important; }
-
-    /* Cards & services stack nicely */
-    .divcontainer, .divcontainer2 {
-        flex-wrap: wrap !important;
-        gap: 20px !important;
-        margin-top: 40px !important;
-        height: auto !important;
+    /* ---------- SECTION 4 / CARDS ---------- */
+    .divcontainer,
+    .divcontainer2 {
+        flex-direction: column;
+        margin-top: 40px;
+        height: auto;
+        align-items: center;
     }
 
     .card {
-        width: 45% !important;
-        margin: 0 auto !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        position: relative !important;
+        width: 90%;
+        margin-bottom: 40px;
     }
 
     .circle {
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+        left: 50%;
+        transform: translateX(-50%);
     }
-
-    .img { width: 70% !important; margin-left: 0 !important; }
-
-    .global { margin-right: 0 !important; padding: 0 20px !important; max-width: 90vw !important; }
-
-    .div3 { gap: 12px !important; }
 }
 
-/* ============================
-   MOBILES (<= 768px) — comportement essentiel
-   ============================ */
-@media (max-width: 768px) {
-
-    /* Nav becomes stacked and not fixed */
-    .nav {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 12px !important;
-        padding: 12px !important;
-        position: static !important;
-    }
-
-    .navbar {
-        position: static !important;
-    }
-
-    /* Titre centré et plus petit */
-    .titre {
-        top: 30% !important;
-        left: 50% !important;
-        transform: translate(-50%, -30%) !important;
-        text-align: center !important;
-        max-width: 92vw !important;
-    }
-
-    .h1 { font-size: 32px !important; }
-    .p  { font-size: 18px !important; }
-
-    /* Stack left blocks vertically */
-    .div3 {
-        position: relative !important;
-        top: auto !important;
-        left: auto !important;
-        transform: none !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 92vw !important;
-        margin: 16px auto !important;
-    }
-
-    .premierdiv, .deuxiemediv {
-        width: 100% !important;
-        height: auto !important;
-        padding: 18px !important;
-    }
-
-    /* Cards full width */
-    .card {
-        width: 100% !important;
-        margin: 14px 0 !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-
-    .circle {
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-
-    /* reduce header density */
-    .bloc {
-        flex-direction: column !important;
-        gap: 8px !important;
-        margin-left: 8px !important;
-        font-size: 14px !important;
-    }
-    .bloc-icone { gap: 12px !important; margin-right: 8px !important; }
-
-    /* clients logos */
-    .section3 { padding: 4% !important; gap: 12px !important; }
-    .client img { width: 64px !important; }
-}
-
-/* ============================
-   PETITS TÉLÉPHONES (<= 480px)
-   ============================ */
-@media (max-width: 480px) {
-
-    .h1 { font-size: 28px !important; }
-    .p  { font-size: 16px !important; }
-
-    .lienav a { font-size: 15px !important; }
-
-    .titre { top: 28% !important; }
-
-    .div3 { gap: 10px !important; width: 95vw !important; }
-
-    .section3 img { width: 54px !important; }
-    .client img { width: 48px !important; }
-
-    .card { padding: 16px !important; }
-}
 
 
 
