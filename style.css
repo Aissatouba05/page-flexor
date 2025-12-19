@@ -11,14 +11,14 @@
 .bloc{
     display: flex;
     gap: 35px;
-    margin-left: 100px;
+    margin-left: 75px;
     color: white;
     font-size: 18px;
 }
 .bloc-icone{
      display: flex;
     gap: 30px;
-    margin-right: 100px;
+    margin-right: 75px;
 }
 .bloc i{
     color: orangered;
@@ -40,10 +40,10 @@
 .nav{
     display: flex;
     justify-content: center;
-    gap: 30%;
+    gap: 25%;
     background-color: white;
     padding: 24px;
-     position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
+     position: fixed;     
     left: 0;
     right: 0;
     z-index: 1000;
@@ -52,10 +52,12 @@
 .flexor{
    font-weight: bold;
    font-size: 18px;
+   
 }
 .lienav{
     display: flex;
     gap: 30px;
+
 }
 .lienav a{
     text-decoration: none;
@@ -69,7 +71,7 @@
     color: orangered;
 }
 .navbar{
-     position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
+     position: fixed;      
     left: 0;
     right: 0;
     z-index: 1000;  
@@ -112,7 +114,7 @@
     font-size: 30px;
 }
 .div3{
-    position: absolute;     /* Texte au-dessus overlay */
+    position: absolute;  
     color: white;
     margin-top: 350px;
     margin-left: 80px;
@@ -166,17 +168,18 @@
     background-color: #fff7f4; 
     display: flex;
     justify-content: space-between;
-     gap: 20px;
+     gap: 10px;
 }
 .img{
     margin-top: 70px;
     width: 500px;
-    margin-left: 120px;
+    margin-left: 70px;
 }
 .global{
      margin-top: 60px;
-     margin-right: 120px;
+     margin-right: 72px;
     line-height: 1.5;
+    font-size: 12px;
 }
 .case1{
    display: flex;
@@ -198,7 +201,7 @@
     padding: 6%;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 6px;
 }
 .client img{
    width: 100px;
@@ -211,25 +214,27 @@
 
 
 .divcontainer2{
-      height: 600px;
+      /* height: 600px; */
       display: flex;
        justify-content:center;
-        gap: 30px;
-        margin-top: 100px; 
+        gap: 50px;
+       
 
 }
    .divcontainer{
-      height: 600px;
+      padding-bottom: 25px;
       display: flex;
        justify-content:center;
-        gap: 30px;
-        margin-top: -300px;
+        gap: 50px;
+        margin-top: 60px;
+       
           
         }
 
         .centre{
             text-align: center;
-            margin-top: 35px;
+            padding: 80px;
+            padding-top: 35px;
             font-size: 20px;
              line-height: 1.5;
         }
@@ -252,7 +257,8 @@
 
         }
         .card:hover{
-            background-color: #fff7f4 ;
+            background-color: #fff7f4;
+            height: 20%;
         }
         .card h3:hover{
               color:#ff5722 ;
@@ -289,10 +295,10 @@
             margin: auto;
         }
 
-  /* ================= RESPONSIVE MOBILE ================= */
+  /*  RESPONSIVE MOBILE */
 @media (max-width: 768px) {
 
-    /* ---------- HEADER ---------- */
+    /* HEADER*/
     .header {
         flex-direction: column;
         align-items: center;
@@ -316,11 +322,11 @@
         gap: 15px;
     }
     .navbar{
-           position: fixed;      /* ← Ajoute ça */             /* ← Et ça */
+           position: fixed;     
             margin-top: -50%;
     }
 
-    /* ---------- NAVBAR ---------- */
+    /*  NAVBAR */
     .nav {
         flex-direction: column;
         gap: 15px;
@@ -338,7 +344,7 @@
         font-size: 16px;
     }
 
-    /* ---------- SECTION 1 (HERO) ---------- */
+    /* SECTION 1 */
     .section1 {
         height: auto;
         padding-bottom: 80px;
@@ -348,7 +354,7 @@
     position: absolute;
     padding-bottom: 80px;
     height: auto;
-    background: rgba(0,0,0,0.5);  /* Noir semi-transparent */ 
+    background: rgba(0,0,0,0.5); 
 }
     /* .section1::before {
         height: 100%;
@@ -369,7 +375,7 @@
         font-size: 18px;
     }
 
-    /* ---------- BLOCS ORANGE ---------- */
+    /*  BLOCS ORANGE */
     .div3 {
         position: relative;
         flex-direction: column;
@@ -409,7 +415,7 @@
         text-align: left;
     }
 
-    /* ---------- SECTION 3 ---------- */
+    /*  SECTION 3  */
     .section3 {
         flex-direction: column;
         align-items: center;
@@ -417,7 +423,7 @@
         gap: 30px;
     }
 
-    /* ---------- SECTION 4 / CARDS ---------- */
+    /*  SECTION 4 / CARDS - */
     .divcontainer,
     .divcontainer2 {
         flex-direction: column;
@@ -436,9 +442,79 @@
         transform: translateX(-50%);
     }
 }
+ .section-image{
+   width: 90%;
+   margin: 20px auto;
+    /* transition: transform 0.3s ease; */
+   
+}
 
+.div-enfant{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
 
+.image1 , .image2, .image3, .image4 {
+height: 70vh;
+    width: 50%;
+   display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  /* align-items: center;  */
+  border-radius: 8px;
+  background-size: cover;
+ 
 
+}
+.image1{
+    background-image: url(images/services-1.jpg);
+    
+}
+.image2{
+    background-image: url(images/services-2.jpg);
+}
+  .image3{
+    background-image: url(images/services-3.jpg);
+  
+}
+.image4{
+    background-image: url(images/services-4.jpg);
+     
+}
+.paragraphe{
+   text-align: center;
+  padding: 5px;
+  width: 85vh;
+  background-color: rgba(245, 242, 242, 0.943);
+    margin: 0 auto; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    line-height: 1.9;
+ 
+    transition: opacity 0.4s ease;
+}
+.paragraphe h2:hover{
+    color: orangered;
 
-
-
+}
+ /* .image1 , .image2, .image3, .image4 :hover {
+    transform: translateY(-5px);
+     } */
+  
+  
+  @media (max-width: 768px){
+      .section-image .div-enfant  {
+        flex-direction: column;
+        gap: 30px; 
+  }  
+  .paragraphe{
+    width: 70%;
+  }
+  .image1 , .image2, .image3, .image4 {
+    width: 100%;
+  }
+}
